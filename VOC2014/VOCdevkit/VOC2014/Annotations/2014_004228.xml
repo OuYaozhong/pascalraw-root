@@ -1,0 +1,54 @@
+<annotation>
+	<folder>VOC2014</folder>
+	<filename>2014_004228.png</filename>
+	<source>
+		<database>PASCAL VOC Compatible Annotation Database</database>
+		<annotation>Department of Electrical Engineering</annotation>
+		<image>Stanford University</image>
+	</source>
+	<segmented>0</segmented>
+	<object>
+		<name>bicycle</name>
+		<bndbox>
+			<xmax>148</xmax>
+			<xmin>23</xmin>
+			<ymax>325</ymax>
+			<ymin>218</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Right</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>39</xmax>
+			<xmin>1</xmin>
+			<ymax>328</ymax>
+			<ymin>184</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Right</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>115</xmax>
+			<xmin>48</xmin>
+			<ymax>316</ymax>
+			<ymin>179</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+	</object>
+	<size>
+		<depth>3</depth>
+		<height>400</height>
+		<width>600</width>
+	</size>
+</annotation>

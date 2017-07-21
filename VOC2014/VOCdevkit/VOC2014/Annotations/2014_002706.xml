@@ -1,0 +1,67 @@
+<annotation>
+	<folder>VOC2014</folder>
+	<filename>2014_002706.png</filename>
+	<source>
+		<database>PASCAL VOC Compatible Annotation Database</database>
+		<annotation>Department of Electrical Engineering</annotation>
+		<image>Stanford University</image>
+	</source>
+	<segmented>0</segmented>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>338</xmax>
+			<xmin>235</xmin>
+			<ymax>335</ymax>
+			<ymin>121</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Left</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>282</xmax>
+			<xmin>157</xmin>
+			<ymax>344</ymax>
+			<ymin>124</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Left</pose>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>169</xmax>
+			<xmin>97</xmin>
+			<ymax>321</ymax>
+			<ymin>111</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>130</xmax>
+			<xmin>34</xmin>
+			<ymax>363</ymax>
+			<ymin>134</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>1</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<size>
+		<depth>1</depth>
+		<height>400</height>
+		<width>600</width>
+	</size>
+</annotation>

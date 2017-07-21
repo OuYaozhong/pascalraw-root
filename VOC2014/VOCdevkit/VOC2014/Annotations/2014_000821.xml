@@ -1,0 +1,67 @@
+<annotation>
+	<folder>VOC2014</folder>
+	<filename>2014_000821.png</filename>
+	<source>
+		<database>PASCAL VOC Compatible Annotation Database</database>
+		<annotation>Department of Electrical Engineering</annotation>
+		<image>Stanford University</image>
+	</source>
+	<segmented>0</segmented>
+	<object>
+		<name>car</name>
+		<bndbox>
+			<xmax>579</xmax>
+			<xmin>305</xmin>
+			<ymax>383</ymax>
+			<ymin>283</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Left</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>155</xmax>
+			<xmin>93</xmin>
+			<ymax>329</ymax>
+			<ymin>231</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>195</xmax>
+			<xmin>165</xmin>
+			<ymax>322</ymax>
+			<ymin>241</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Right</pose>
+		<truncated>0</truncated>
+	</object>
+	<object>
+		<name>person</name>
+		<bndbox>
+			<xmax>228</xmax>
+			<xmin>193</xmin>
+			<ymax>325</ymax>
+			<ymin>245</ymin>
+		</bndbox>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<pose>Frontal</pose>
+		<truncated>0</truncated>
+	</object>
+	<size>
+		<depth>1</depth>
+		<height>400</height>
+		<width>600</width>
+	</size>
+</annotation>
