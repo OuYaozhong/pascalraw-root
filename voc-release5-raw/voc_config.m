@@ -19,14 +19,14 @@ function conf = voc_config(varargin)
 % Please read the next few lines
 
 % Parent directory that everything (model cache, VOCdevkit) is under
-BASE_DIR    = '/var/tmp/rbg';
+BASE_DIR    = '..';
 
 % PASCAL dataset year to use
-PASCAL_YEAR = '2007';
+PASCAL_YEAR = '2014';
 
 % Models are stored in BASE_DIR/PROJECT/PASCAL_YEAR/
 % e.g., /var/tmp/rbg/voc-release5/2007/
-PROJECT     = 'voc-release5';
+PROJECT     = 'voc-release5-raw';
 
 % The code will look for your PASCAL VOC devkit in 
 % BASE_DIR/VOC<PASCAL_YEAR>/VOCdevkit
@@ -146,23 +146,23 @@ exists_or_mkdir(conf.paths.model_dir);
 % -------------------------------------------------------------------
 % Training configuration 
 % -------------------------------------------------------------------
-conf = cv(conf, 'training.train_set_fg', 'trainval');
+conf = cv(conf, 'training.train_set_fg', 'train');
 conf = cv(conf, 'training.train_set_bg', 'train');
 conf = cv(conf, 'training.C', 0.001);
 conf = cv(conf, 'training.bias_feature', 10);
-% File size limit for the feature vector cache (2^30 bytes = 1GB)
-conf = cv(conf, 'training.cache_byte_limit', 3*2^30);
+% File size limit for the feature vector cache (2*2^30 bytes = 2GB)
+conf = cv(conf, 'training.cache_byte_limit', 2*3*2^30);
 % Location of training log (matlab diary)
 conf.training.log = @(x) sprintf([conf.paths.model_dir '%s.log'], x);
 
-conf = cv(conf, 'training.cache_example_limit', 24000);
-conf = cv(conf, 'training.num_negatives_small', 200);
-conf = cv(conf, 'training.num_negatives_large', 2000);
+conf = cv(conf, 'training.cache_example_limit', 48000);
+conf = cv(conf, 'training.num_negatives_small', 400);
+conf = cv(conf, 'training.num_negatives_large', 4000);
 conf = cv(conf, 'training.wlssvm_M', 0);
 conf = cv(conf, 'training.fg_overlap', 0.7);
 
 conf = cv(conf, 'training.lbfgs.options.verbose', 2);
-conf = cv(conf, 'training.lbfgs.options.maxIter', 1000);
+conf = cv(conf, 'training.lbfgs.options.maxIter', 2000);
 conf = cv(conf, 'training.lbfgs.options.optTol', 0.000001);
 
 conf = cv(conf, 'training.interval_fg', 5);
@@ -173,7 +173,7 @@ conf = cv(conf, 'training.interval_bg', 4);
 % Evaluation configuration 
 % -------------------------------------------------------------------
 conf = cv(conf, 'eval.interval', 10);
-conf = cv(conf, 'eval.test_set', 'test');
+conf = cv(conf, 'eval.test_set', 'val');
 conf = cv(conf, 'eval.max_thresh', -1.1);
 conf.pascal.VOCopts.testset = conf.eval.test_set;
 
