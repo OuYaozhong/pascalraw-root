@@ -29,11 +29,14 @@ catch
   nrules = length(model.rules{model.start});
   bboxpred = cell(nrules, 1);
   for c = 1:nrules
-    [A x1 y1 x2 y2 w h] = bboxpred_input(ds_all{c}, bs_all{c});
-    bboxpred{c}.x1 = getcoeffs(method, A, (targets{c}(:,1)-x1)./w);
-    bboxpred{c}.y1 = getcoeffs(method, A, (targets{c}(:,2)-y1)./h);
-    bboxpred{c}.x2 = getcoeffs(method, A, (targets{c}(:,3)-x2)./w);
-    bboxpred{c}.y2 = getcoeffs(method, A, (targets{c}(:,4)-y2)./h);
+    % this if statement allows bboxpred to work even when some components have no detections or ground truth 
+    if (~isempty(ds_all{c}))
+    	[A x1 y1 x2 y2 w h] = bboxpred_input(ds_all{c}, bs_all{c});
+        bboxpred{c}.x1 = getcoeffs(method, A, (targets{c}(:,1)-x1)./w);
+        bboxpred{c}.y1 = getcoeffs(method, A, (targets{c}(:,2)-y1)./h);
+        bboxpred{c}.x2 = getcoeffs(method, A, (targets{c}(:,3)-x2)./w);
+        bboxpred{c}.y2 = getcoeffs(method, A, (targets{c}(:,4)-y2)./h);
+    end
   end
   fprintf('done\n');
   % save bbox predictor coefficients in the model

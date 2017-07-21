@@ -25,11 +25,20 @@ for c = 1:maxc
   end
   % build test data
   [A x1 y1 x2 y2 w h] = bboxpred_input(d, b(:,1:end-2));
-  % predict displacements
-  dx1 = A*bboxpred{c}.x1;
-  dy1 = A*bboxpred{c}.y1;
-  dx2 = A*bboxpred{c}.x2;
-  dy2 = A*bboxpred{c}.y2;
+  % this if statement allows bboxpred to work even when some components have no detections or ground truth
+  if (~isempty(bboxpred{c}))
+  	% predict displacements
+  	dx1 = A*bboxpred{c}.x1;
+  	dy1 = A*bboxpred{c}.y1;
+  	dx2 = A*bboxpred{c}.x2;
+  	dy2 = A*bboxpred{c}.y2;
+  else
+  % if there are no detections on which to base predictions, simply assume zero displacement. 
+        dx1 = 0;
+	dy1 = 0;
+	dx2 = 0;
+	dy2 = 0;
+  end
 
   % compute object location from predicted displacements
   tmp = [x1 + (w.*dx1) ... 
