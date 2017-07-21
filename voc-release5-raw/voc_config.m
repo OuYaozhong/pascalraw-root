@@ -230,6 +230,12 @@ if isempty(voc_opts) || ~voc_opts.isKey(key)
 end
 VOCopts = voc_opts(key);
 
+%Clear VOCopts.annopathcache. This prevents old ground truth annotations 
+%from being used when the database is expanded or updated. 
+unix(sprintf('rm %s', sprintf(VOCopts.annocachepath, VOCopts.testset)));
+
+%Clear VOCopts.%Clear VOCopts.detrespath. This prevents old results from being used.
+unix(sprintf('rm %s', sprintf(VOCopts.detrespath, 'comp3', '*')));
 
 % -------------------------------------------------------------------
 % Does nothing if conf.key exists, otherwise sets conf.key to val
