@@ -108,7 +108,7 @@ catch
     % Filter to interoplate parts from
     filterind = i;
     model = model_add_parts(model, model.start, ruleind, ...
-                            partner, filterind, 8, [6 6], 1);
+                            partner, filterind, 8, [6 6], 0);
     % Enable learning location/scale prior
     bl = model.rules{model.start}(i).loc.blocklabel;
     model.blocks(bl).w(:)     = 0;

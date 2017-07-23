@@ -50,7 +50,7 @@ bs = 20;
 w = foldHOG(model_get_block(model, model.filters(root)));
 scale = max(w(:));
 im = HOGpicture(w, bs);
-im = imresize(im, 2);
+%im = imresize(im, 2);
 im = padarray(im, [pad pad], 0);
 im = uint8(im * (255/scale));
 

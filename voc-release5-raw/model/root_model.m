@@ -52,7 +52,7 @@ if nargin < 5
   h = w*aspect;
 
   % size of root filter
-  sz = [round(h/model.sbin) round(w/model.sbin)];
+  sz = 2*[round(h/model.sbin) round(w/model.sbin)];
 end
 
 % get an empty model
