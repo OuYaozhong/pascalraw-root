@@ -5,7 +5,7 @@
 
 /// Binary Parameters
 /// 1 for log gradients, 0 for linear gradients
-int LOG_GRADIENTS = 0;
+int LOG_GRADIENTS = 1;
 /// 1 for normalization, 0 for no normalization
 int NORMALIZATION = 1;
 /// 1 for truncation, 0 for no truncation
@@ -17,7 +17,7 @@ int NOISE = 0;
 /// fullscale log gradient magnitude for log gradient quantization
 double LOG_GRADIENT_FULLSCALE_MAGNITUDE = log(8);
 /// bitdepth of log gradients
-int LOG_GRADIENT_BITDEPTH = 12;
+int LOG_GRADIENT_BITDEPTH = 2;
 /// bitdepth of image before gradient extraction 
 int IMAGE_BITDEPTH = 12;
 /// bitdepth of input images (typically 12 for RAW images and 8 for JPG images)
