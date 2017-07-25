@@ -16,6 +16,11 @@ function pascal(cls, n, note, dotrainval, testyear)
 
 startup;
 
+matlabpool close force local;
+matlabpool open 12;
+compile;
+fv_cache('unlock');
+
 conf = voc_config();
 cachedir = conf.paths.model_dir;
 testset = conf.eval.test_set;
