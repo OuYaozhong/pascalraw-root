@@ -16,9 +16,9 @@ function pascal(cls, n, note, dotrainval, testyear)
 
 startup;
 
-matlabpool close force local;
-matlabpool open 12;
-compile;
+
+p = gcp
+compile(true,true);
 fv_cache('unlock');
 
 conf = voc_config();
