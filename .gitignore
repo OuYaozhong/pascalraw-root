@@ -98,3 +98,4 @@ dkms.conf
 .DS_Store
 .DS_Store?
 *.mexmaci64
+*.mexa64
