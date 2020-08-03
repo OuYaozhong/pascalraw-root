@@ -89,3 +89,9 @@ dkms.conf
 *.exe
 *.out
 *.app
+
+# ------- MAC OS
+**/.DS_Store*
+.DS_Store
+.DS_Store?
+*.mexmaci64

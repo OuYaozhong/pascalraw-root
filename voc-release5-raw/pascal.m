@@ -18,7 +18,7 @@ startup;
 
 
 p = gcp
-compile(true,true);
+compile;
 fv_cache('unlock');
 
 conf = voc_config();
