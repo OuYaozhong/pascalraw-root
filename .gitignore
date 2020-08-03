@@ -1,6 +1,9 @@
 # Database
 VOC2014/VOCdevkit/VOC2014/JPEGImages/
 
+# LOG
+voc-release5-raw/2014/
+
 # ----- C ignore
 # Prerequisites
 *.d
