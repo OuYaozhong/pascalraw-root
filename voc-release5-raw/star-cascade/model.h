@@ -54,9 +54,9 @@ public:
   int numdefparams;
 
   // feature pyramid data
-  int numlevels;
+  mwSize numlevels;
   // dimensions of each feature pyramid level
-  int **featdims;
+  mwSize **featdims;
   // number of positions in each feature pyramid level
   int *featdimsprod;
   // feature pyramid levels

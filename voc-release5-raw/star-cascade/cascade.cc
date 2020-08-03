@@ -47,7 +47,7 @@ static inline double conv(int x, int y,
   int A_inc = A_dims[0]*A_dims[1];
   for (int f = 0; f < num_features; f++) {
     const float *A_off = A_src;
-    for (int xp = 0; xp < B_dims[1]; xp++) {
+    for (mwSize xp = 0; xp < B_dims[1]; xp++) {
       // valid only for filters with <= 20 rows
       switch(B_dims[0]) {
         case 20: val += A_off[19] * B_off[19];

@@ -117,7 +117,7 @@ mxArray *process(const mxArray *mximage, const mxArray *mxsbin) {
   const mxArray *mximagecopy = mxDuplicateArray(mximage);
 
   double *im = (double *)mxGetPr(mximagecopy);
-  const int *dims = mxGetDimensions(mximagecopy);
+  const mwSize *dims = mxGetDimensions(mximagecopy);
   const int numPixels = mxGetNumberOfElements(mximagecopy);
   if (mxGetNumberOfDimensions(mximagecopy) != 3 ||
       dims[2] != 3 ||
@@ -138,7 +138,7 @@ mxArray *process(const mxArray *mximage, const mxArray *mxsbin) {
   float *norm = (float *)mxCalloc(blocks[0]*blocks[1], sizeof(float));
 
   // memory for HOG features
-  int out[3];
+  mwSize out[3];
   /// blocks[0]-2 and blocks[1]-2 accounts for the fact that the actual blocks (as defined by 
   /// Dalal & Triggs) are of 2x2 cells (referred to as blocks here) and have 50% overlap. 
   /// 27 + 4 + 1 refers to the enhanced HOG features described in "From Rigid Templates to Grammars"

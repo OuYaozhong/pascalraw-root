@@ -47,7 +47,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[]) {
   const bool im_clip = (double)bbox_area / (double)im_area < 0.7;
 
   // outputs
-  const int dims[] = {feat_dim_y, feat_dim_x};
+  const mwSize dims[] = {feat_dim_y, feat_dim_x};
   mxArray *mx_overlap = mxCreateNumericArray(2, dims, mxDOUBLE_CLASS, mxREAL);
   double *overlap = (double *)mxGetPr(mx_overlap);
   plhs[0] = mx_overlap;

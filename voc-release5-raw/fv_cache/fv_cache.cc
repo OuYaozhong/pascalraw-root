@@ -297,7 +297,7 @@ static void shrink_handler(int nlhs, mxArray *plhs[], int nrhs, const mxArray *p
             F.size(), gctx.byte_size/(1024.0*1024.0));
 
   const mxArray *mx_inds = prhs[1];
-  const int *inds_dims = mxGetDimensions(prhs[1]);
+  const mwSize *inds_dims = mxGetDimensions(prhs[1]);
   const int ind_len = max(inds_dims[0], inds_dims[1]);
   const int *inds = (const int *)mxGetPr(mx_inds);
   const int *inds_end = inds + ind_len;
@@ -351,9 +351,9 @@ static void gradient_handler(int nlhs, mxArray *plhs[], int nrhs, const mxArray 
   omp_set_num_threads(num_threads);
 
   // Update the model with the current parameters
-  int dim = 0;
+  mwSize dim = 0;
   const double *p_cur_w = cur_w;
-  for (int i = 0; i < M.num_blocks; i++) {
+  for (mwSize i = 0; i < M.num_blocks; i++) {
     int s = M.block_sizes[i];
     double *wi = w[i];
     copy(p_cur_w, p_cur_w+s, wi);
@@ -378,7 +378,7 @@ static void gradient_handler(int nlhs, mxArray *plhs[], int nrhs, const mxArray 
     double delta_norm = 0;
     double *w_old = M.w_hist[i];
     if (w_old != NULL) {
-      for (int j = 0; j < dim; j++) {
+      for (mwSize j = 0; j < dim; j++) {
         double d = w_old[j] - cur_w[j];
         delta_norm += d * d;
       }
@@ -439,7 +439,7 @@ static void info_handler(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prh
   enum { SCORE = 0, UNIQUE, DATA_ID, X, Y, SCALE, BYTE_SIZE, 
          MARGIN, BELIEF, ZERO, MINED, NUM };
 
-  int dims[]       = { (int)gctx.F.size(), NUM };
+  mwSize dims[]       = { (mwSize)gctx.F.size(), NUM };
   mxArray *mx_info = mxCreateNumericArray(2, dims, mxDOUBLE_CLASS, mxREAL);
   double *info     = mxGetPr(mx_info);
 
@@ -480,7 +480,7 @@ static void get_model_handler(int nlhs, mxArray *plhs[], int nrhs, const mxArray
   mxArray *mx_model = mxCreateCellArray(1, &(M.num_blocks));
   plhs[0] = mx_model;
 
-  for (int i = 0; i < M.num_blocks; i++) {
+  for (mwSize i = 0; i < M.num_blocks; i++) {
     mxArray *mx_block = mxCreateNumericArray(1, &(M.block_sizes[i]), mxDOUBLE_CLASS, mxREAL);
     mxSetCell(mx_model, i, mx_block);
     double *block = mxGetPr(mx_block);
@@ -518,7 +518,7 @@ static void set_model_handler(int nlhs, mxArray *plhs[], int nrhs, const mxArray
   const mxArray *mx_lb = prhs[2];
 
   M.num_blocks = mxGetDimensions(mx_w)[0];
-  M.block_sizes = new (nothrow) int[M.num_blocks];
+  M.block_sizes = new (nothrow) mwSize[M.num_blocks];
   M.w = new (nothrow) double*[M.num_blocks];
   M.lb = new (nothrow) double*[M.num_blocks];
   check(M.block_sizes != NULL);
