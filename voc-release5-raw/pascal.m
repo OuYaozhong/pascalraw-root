@@ -16,8 +16,9 @@ function pascal(cls, n, note, dotrainval, testyear)
 
 startup;
 
-
-p = gcp
+if isempty(gcp('nocreate'))
+    p = parpool('local',20)
+end
 compile;
 fv_cache('unlock');
 
