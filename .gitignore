@@ -99,3 +99,4 @@ dkms.conf
 .DS_Store?
 *.mexmaci64
 *.mexa64
+*.zip
