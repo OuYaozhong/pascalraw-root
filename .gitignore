@@ -100,3 +100,6 @@ dkms.conf
 *.mexmaci64
 *.mexa64
 *.zip
+
+# MATLAB
+*.mat
