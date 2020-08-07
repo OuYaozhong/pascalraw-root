@@ -6,8 +6,8 @@
 #SBATCH --time                  24:00:00
 #SBATCH --cpus-per-task         40
 #SBATCH --mem                   50G
-#SBATCH --output                ~/pascalraw-mix/log/person_mix2000.%j.out
-#SBATCH --error                 ~/pascalraw-mix/log/person_mix2000.%j.err
+#SBATCH --output                person_mix2000.%j.out
+#SBATCH --error                 person_mix2000.%j.err
 #SBATCH --mail-type             ALL
 #SBATCH --mail-user             ou.yaozhong@connect.um.edu.mo
 
