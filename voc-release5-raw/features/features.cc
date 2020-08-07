@@ -5,7 +5,7 @@
 
 /// Binary Parameters
 /// 1 for log gradients, 0 for linear gradients
-int LOG_GRADIENTS = 1;
+int LOG_GRADIENTS = 0;
 /// 1 for normalization, 0 for no normalization
 int NORMALIZATION = 1;
 /// 1 for truncation, 0 for no truncation
