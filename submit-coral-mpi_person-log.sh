@@ -1,13 +1,13 @@
 #!/bin/bash
-#SBATCH --job-name              bicycle_log
+#SBATCH --job-name              person_log
 #SBATCH --partition             mpi-short
 #SBATCH --nodes                 1
 #SBATCH --tasks-per-node        1
 #SBATCH --time                  24:00:00
 #SBATCH --cpus-per-task         40
 #SBATCH --mem                   50G
-#SBATCH --output                bicycle_log.%j.out
-#SBATCH --error                 bicycle_log.%j.err
+#SBATCH --output                person_log.%j.out
+#SBATCH --error                 person_log.%j.err
 #SBATCH --mail-type             ALL
 #SBATCH --mail-user             ou.yaozhong@connect.um.edu.mo
 
@@ -21,5 +21,5 @@ ulimit -s unlimited
 
 #Your program starts here
 module load matlab/R2019a
-cd ~/pascalraw-log-bicycle/voc-release5-raw
-matlab -nodisplay -r "addpath(genpath('~/pascalraw-log-bicycle')); pascal('bicycle',3);" -logfile ~/pascalraw-log-bicycle/log/bicycle_log.log
+cd ~/pascalraw-log-person/voc-release5-raw
+matlab -nodisplay -r "addpath(genpath('~/pascalraw-log-person')); pascal('person',3);" -logfile ~/pascalraw-log-person/log/person_log.log
