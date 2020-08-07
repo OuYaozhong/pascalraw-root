@@ -103,6 +103,7 @@ dkms.conf
 
 # MATLAB
 *.mat
+*.m~
 
 # Add-Ons 
 add-ons/
