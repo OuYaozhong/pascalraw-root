@@ -1,0 +1,23 @@
+{Error using imread>get_full_filename (line 566)
+File
+"/data/home/mb95563/pascalraw-log-bicycle/VOC2014/VOCdevkit/VOC2014/JPEGImages/2014_000038.png"
+does not exist.
+
+Error in imread (line 375)
+    fullname = get_full_filename(filename);
+
+Error in imreadx (line 11)
+im = color(imread(ex.im));
+
+Error in warppos (line 22)
+parfor i = 1:numpos
+
+Error in lrsplit (line 21)
+warped = warppos(model, pos);
+
+Error in pascal_train (line 56)
+    inds = lrsplit(models{i}, spos{i});
+
+Error in pascal (line 55)
+model = pascal_train(cls, n, note);
+} 
