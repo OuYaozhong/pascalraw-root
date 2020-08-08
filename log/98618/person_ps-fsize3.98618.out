@@ -1,0 +1,253 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+                  R2019a (9.6.0.1072779) 64-bit (glnxa64)
+                               March 8, 2019
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+rm: cannot remove '/data/home/mb95563/pascalraw-ps-size3-person/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-ps-size3-person/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+voc-release5 is set up
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 20).
+
+p = 
+
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 20
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In fv_compile (line 44)
+  In compile (line 48)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/fv_cache.cc: In function 'void set_model_handler(int, mxArray**, int, const mxArray**)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/fv_cache.cc:528:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < M.num_blocks; i++) {
+                         ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/fv_cache.cc:554:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < M.num_blocks; i++)
+                           ^
+
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/obj_func.cc: In function 'void obj_val(double*, ex_cache&, model&)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/obj_func.cc:33:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int b = 0; b < M.num_blocks; b++) {
+                           ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/obj_func.cc:36:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int k = 0; k < M.block_sizes[b]; k++)
+                                          ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/obj_func.cc:54:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 0; k < M.block_sizes[b]; k++)
+                                            ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/obj_func.cc: In function 'void update_gradient(const model&, fv_iter, double**, double)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/obj_func.cc:149:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int k = 0; k < M.block_sizes[b]; k++)
+                                          ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/obj_func.cc: In function 'void gradient(double*, double*, int, ex_cache&, const model&, int)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/obj_func.cc:184:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < M.num_blocks; i++) {
+                           ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/obj_func.cc:251:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int b = 0; b < M.num_blocks; b++) {
+                           ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/obj_func.cc:255:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int k = 0; k < M.block_sizes[b]; k++) {
+                                          ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/obj_func.cc:277:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 0; k < M.block_sizes[b]; k++)
+                                            ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/fv_cache/obj_func.cc:312:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 0; k < M.block_sizes[b]; k++)
+                                            ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In cascade_compile (line 43)
+  In compile (line 50)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/star-cascade/cascade.cc: In function 'void init(const mxArray**)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/star-cascade/cascade.cc:230:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 1; i < MODEL->numlevels+1; i++) {
+                                        ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 52)
+  In pascal (line 22)] 
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 53)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/features/features.cc: In function 'mxArray* process(const mxArray*, const mxArray*)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/features/features.cc:289:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0; x < out[1]; x++) {
+                            ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/features/features.cc:290:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y = 0; y < out[0]; y++) {
+                              ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 54)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/dt.cc: In function 'void mexFunction(int, mxArray**, int, const mxArray**)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/dt.cc:68:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0; x < dims[1]; x++)
+                             ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/dt.cc:71:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int y = 0; y < dims[0]; y++)
+                             ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/dt.cc:75:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0; x < dims[1]; x++) {
+                             ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/dt.cc:76:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y = 0; y < dims[0]; y++) {
+                               ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 55)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/bounded_dt.cc: In function 'void mexFunction(int, mxArray**, int, const mxArray**)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/bounded_dt.cc:57:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0; x < dims[1]; x++)
+                             ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/bounded_dt.cc:60:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int y = 0; y < dims[0]; y++)
+                             ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/bounded_dt.cc:64:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0; x < dims[1]; x++) {
+                             ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/bounded_dt.cc:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y = 0; y < dims[0]; y++) {
+                               ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 56)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/get_detection_trees.cc: In function 'void backtrack(int, int, int, int, double, mxArray*, double*, mwSize*, double*, mwSize*, bool)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/get_detection_trees.cc:322:45: warning: narrowing conversion of 'ctx.context::next_id' from 'int' to 'mwSize {aka long unsigned int}' inside { } [-Wnarrowing]
+   mwSize dims[] = { node::N_SZ, ctx.next_id };
+                                             ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/get_detection_trees.cc: In function 'void mexFunction(int, mxArray**, int, const mxArray**)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/get_detection_trees.cc:400:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < dim[0]; i++)
+                            ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 57)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/compute_overlap.cc: In function 'void mexFunction(int, mxArray**, int, const mxArray**)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/compute_overlap.cc:50:48: warning: narrowing conversion of 'feat_dim_y' from 'const int' to 'const mwSize {aka const long unsigned int}' inside { } [-Wnarrowing]
+   const mwSize dims[] = {feat_dim_y, feat_dim_x};
+                                                ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/compute_overlap.cc:50:48: warning: narrowing conversion of 'feat_dim_x' from 'const int' to 'const mwSize {aka const long unsigned int}' inside { } [-Wnarrowing]
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 64)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/fconvsse.cc: In function 'float* prepare(float*, const mwSize*)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/fconvsse.cc:133:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0; x < dims[1]; x++) {
+                             ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/fconvsse.cc:134:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y = 0; y < dims[0]; y++) {
+                               ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/fconvsse.cc:135:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int f = 0; f < dims[2]; f++)
+                                 ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 72)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/fconv_var_dim_MT.cc: In function 'void* process(void*)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/fconv_var_dim_MT.cc:38:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int x = 0; x < C_dims[1]; x++) {
+                                 ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/fconv_var_dim_MT.cc:39:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int y = 0; y < C_dims[0]; y++) {
+                                   ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/fconv_var_dim_MT.cc:41:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int xp = 0; xp < B_dims[1]; xp++) {
+                                       ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/fconv_var_dim_MT.cc:67:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+               for (int yp = 0; yp < B_dims[0]; yp++) {
+                                             ^
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/fconv_var_dim_MT.cc: In function 'void mexFunction(int, mxArray**, int, const mxArray**)':
+/data/home/mb95563/pascalraw-ps-size3-person/voc-release5-raw/gdetect/fconv_var_dim_MT.cc:98:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (start < 0 || end >= num_bs || start > end)
+                           ^
+
+MEX completed successfully.
+rm: cannot remove '/data/home/mb95563/pascalraw-ps-size3-person/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-ps-size3-person/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-ps-size3-person/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-ps-size3-person/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-ps-size3-person/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-ps-size3-person/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-ps-size3-person/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-ps-size3-person/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+Cache freed; byte size is: 0
+Created a feature vector cache to hold <= 163216 elements in <= 6144.0MB
+Using max component regularization
+voc-release5-raw iter: 1/4
+saving 0/0 cache entries
+Shrinking cache...
+Cache holds 0 feature vectors (0.0MB) prior to shrinking
+Cache holds 0 feature vectors (0.0MB) after shrinking
+rm: cannot remove '/data/home/mb95563/pascalraw-ps-size3-person/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-ps-size3-person/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+Cache freed; byte size is: 0
