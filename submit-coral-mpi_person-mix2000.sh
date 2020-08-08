@@ -21,5 +21,5 @@ ulimit -s unlimited
 
 #Your program starts here
 module load matlab/R2019a
-cd ~/pascalraw-mix/voc-release5-raw
-matlab -nodisplay -r "addpath(genpath('~/pascalraw-mix')); pascal('person',3);" -logfile ~/pascalraw-mix/log/person_mix2000.log
+cd ~/pascalraw-mix2000-person/voc-release5-raw
+matlab -nodisplay -r "addpath(genpath('~/pascalraw-mix2000-person')); pascal('person',3);" -logfile ~/pascalraw-mix2000-person/log/person_mix2000.log
