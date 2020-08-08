@@ -1,0 +1,9 @@
+{Error using fprintf
+Invalid file identifier. Use fopen to generate a valid file identifier.
+
+Error in pascal_eval (line 30)
+    fprintf(fid, '%s %f %d %d %d %d\n', ids{i}, bbox(j,end), bbox(j,1:4));
+
+Error in pascal (line 71)
+ap1 = pascal_eval(cls, ds, testset, testyear, suffix);
+} 
