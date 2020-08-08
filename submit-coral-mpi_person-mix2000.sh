@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name              person_mix2000
-#SBATCH --partition             mpi-short
+#SBATCH --partition             mpi-normal
 #SBATCH --nodes                 1
 #SBATCH --tasks-per-node        1
-#SBATCH --time                  24:00:00
+#SBATCH --time                  72:00:00
 #SBATCH --cpus-per-task         40
 #SBATCH --mem                   50G
 #SBATCH --output                person_mix2000.%j.out
