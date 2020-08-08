@@ -1,0 +1,23 @@
+{Error using imread>get_full_filename (line 566)
+File
+"/data/home/mb95563/pascalraw-root/VOC2014/VOCdevkit/VOC2014/JPEGImages/2014_000002.png"
+does not exist.
+
+Error in imread (line 375)
+    fullname = get_full_filename(filename);
+
+Error in imreadx (line 11)
+im = color(imread(ex.im));
+
+Error in train>poslatent (line 503)
+  parfor k = 1:thisbatchsize
+
+Error in train (line 113)
+          = poslatent(t, iter, model, pos, fg_overlap, num_fp);
+
+Error in pascal_train (line 120)
+  model = train(model, impos, neg_small, false, false, 8, 10, ...
+
+Error in pascal (line 55)
+model = pascal_train(cls, n, note);
+} 
