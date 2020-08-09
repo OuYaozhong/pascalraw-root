@@ -1,0 +1,13 @@
+{Error using train>negrandom (line 651)
+'random' requires Statistics and Machine Learning Toolbox.
+
+Error in train (line 170)
+          = negrandom(t, model, neg, max_num_examples-num_examples);
+
+Error in pascal_train (line 58)
+    models{i} = train(models{i}, spos{i}(inds), neg_large, true, true, 1, 1,
+    ...
+
+Error in pascal (line 55)
+model = pascal_train(cls, n, note);
+} 

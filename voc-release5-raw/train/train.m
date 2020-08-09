@@ -648,8 +648,8 @@ for i = 1:numneg
   feat = features(double(im), model.sbin);  
   if size(feat,2) > rsize(2) && size(feat,1) > rsize(1)
     for j = 1:rndneg
-      x = random('unid', size(feat,2)-rsize(2)+1);
-      y = random('unid', size(feat,1)-rsize(1)+1);
+      x = randi(size(feat,2)-rsize(2)+1);
+      y = randi(size(feat,1)-rsize(1)+1);
       f = feat(y:y+rsize(1)-1, x:x+rsize(2)-1,:);
       dataid = (i-1)*rndneg+j + 100000; % assumes < 100K foreground examples
       key = [dataid 0 0 0];
