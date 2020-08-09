@@ -101,13 +101,13 @@ void Model::initpyramid(const mxArray *pyramid, const mxArray *projpyramid) {
   mxArray *mx_feat = mxGetField(pyramid, 0, "feat");
   mxArray *mx_proj_feat = mxGetField(projpyramid, 0, "feat");
   numlevels    = (int)(mxGetDimensions(mx_feat)[0]);
-  featdims     = new int*[numlevels];
+  featdims     = new mwSize*[numlevels];
   featdimsprod = new int[numlevels];
   feat[0]      = new float*[numlevels];
   feat[1]      = new float*[numlevels];
   for (int l = 0; l < numlevels; l++) {
     const mxArray *mxA  = mxGetCell(mx_feat, l);
-    featdims[l]         = (int*)mxGetDimensions(mxA);
+    featdims[l]         = (mwSize*)mxGetDimensions(mxA);
     featdimsprod[l]     = featdims[l][0]*featdims[l][1];
     feat[0][l]          = (float *)mxGetPr(mxA);
     // projected pyramid

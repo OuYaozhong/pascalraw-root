@@ -55,15 +55,15 @@ void *process(void *thread_arg) {
 
   __m128 a,b,c;
   double *dst = C;
-  for (int x = 0; x < C_dims[1]; x++) {
-    for (int y = 0; y < C_dims[0]; y++) {
+  for (mwSize x = 0; x < C_dims[1]; x++) {
+    for (mwSize y = 0; y < C_dims[0]; y++) {
       __m128 v = _mm_setzero_ps();
       const float *A_src = A + y*NUM_FEATURES + x*A_dims[0]*NUM_FEATURES;
       const float *B_src = B;
-      for (int xp = 0; xp < B_dims[1]; xp++) {
+      for (mwSize xp = 0; xp < B_dims[1]; xp++) {
         const float *A_off = A_src;
         const float *B_off = B_src;
-        for (int yp = 0; yp < B_dims[0]; yp++) {
+        for (mwSize yp = 0; yp < B_dims[0]; yp++) {
           a = _mm_load_ps(A_off+0);
           b = _mm_load_ps(B_off+0);
           c = _mm_mul_ps(a, b);
@@ -123,7 +123,7 @@ void *process(void *thread_arg) {
   pthread_exit(NULL);
 }
 
-float *prepare(float *in, const int *dims) {
+float *prepare(float *in, const mwSize *dims) {
   float *F = (float *)malloc_aligned(16, dims[0]*dims[1]*NUM_FEATURES*sizeof(float));
   // Sanity check that memory is aligned
   if (!IS_ALIGNED(F))
@@ -157,7 +157,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[]) {
 
   // get B and start/end
   const mxArray *cellB = prhs[1];
-  mwSize num_bs = mxGetNumberOfElements(cellB);  
+  int num_bs = mxGetNumberOfElements(cellB);  
   int start = (int)mxGetScalar(prhs[2]) - 1;
   int end = (int)mxGetScalar(prhs[3]) - 1;
   if (start < 0 || end >= num_bs || start > end)

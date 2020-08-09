@@ -29,8 +29,8 @@ struct model {
    ** Model description
    **/
   // Block-sparse representation
-  int num_blocks;
-  int *block_sizes;
+  mwSize num_blocks;
+  mwSize *block_sizes;
 
   /** ---------------------------------------------------------------
    ** WL-SSVM objective function, parameters, hyper-parameters, and 
@@ -100,7 +100,7 @@ struct model {
    **/
   void free() {
     if (w != NULL) {
-      for (int i = 0; i < num_blocks; i++)
+      for (mwSize i = 0; i < num_blocks; i++)
         if (w[i] != NULL)
           delete [] w[i];
       delete [] w;
@@ -108,7 +108,7 @@ struct model {
     w = NULL;
 
     if (lb != NULL) {
-      for (int i = 0; i < num_blocks; i++)
+      for (mwSize i = 0; i < num_blocks; i++)
         if (lb[i] != NULL)
           delete [] lb[i];
       delete [] lb;
@@ -172,7 +172,7 @@ struct model {
       int b             = bls[j];
       double *wb        = w[b];
       double block_val  = 0;
-      for (int k = 0; k < block_sizes[b]; k++)
+      for (mwSize k = 0; k < block_sizes[b]; k++)
         block_val += wb[k] * feat[k];
       feat += block_sizes[b];
       val += block_val;

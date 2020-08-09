@@ -16,8 +16,9 @@ function pascal(cls, n, note, dotrainval, testyear)
 
 startup;
 
-matlabpool close force local;
-matlabpool open 12;
+if isempty(gcp('nocreate'))
+    p = parpool('local',20)
+end
 compile;
 fv_cache('unlock');
 
