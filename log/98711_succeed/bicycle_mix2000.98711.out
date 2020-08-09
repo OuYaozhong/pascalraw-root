@@ -1,0 +1,1060 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2019 The MathWorks, Inc.
+                  R2019a (9.6.0.1072779) 64-bit (glnxa64)
+                               March 8, 2019
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+voc-release5 is set up
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 20).
+
+p = 
+
+ Pool with properties: 
+
+            Connected: true
+           NumWorkers: 20
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In fv_compile (line 44)
+  In compile (line 48)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/fv_cache.cc: In function 'void set_model_handler(int, mxArray**, int, const mxArray**)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/fv_cache.cc:528:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < M.num_blocks; i++) {
+                         ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/fv_cache.cc:554:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < M.num_blocks; i++)
+                           ^
+
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/obj_func.cc: In function 'void obj_val(double*, ex_cache&, model&)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/obj_func.cc:33:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int b = 0; b < M.num_blocks; b++) {
+                           ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/obj_func.cc:36:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int k = 0; k < M.block_sizes[b]; k++)
+                                          ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/obj_func.cc:54:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 0; k < M.block_sizes[b]; k++)
+                                            ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/obj_func.cc: In function 'void update_gradient(const model&, fv_iter, double**, double)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/obj_func.cc:149:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int k = 0; k < M.block_sizes[b]; k++)
+                                          ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/obj_func.cc: In function 'void gradient(double*, double*, int, ex_cache&, const model&, int)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/obj_func.cc:184:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < M.num_blocks; i++) {
+                           ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/obj_func.cc:251:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int b = 0; b < M.num_blocks; b++) {
+                           ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/obj_func.cc:255:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int k = 0; k < M.block_sizes[b]; k++) {
+                                          ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/obj_func.cc:277:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 0; k < M.block_sizes[b]; k++)
+                                            ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/fv_cache/obj_func.cc:312:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int k = 0; k < M.block_sizes[b]; k++)
+                                            ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In cascade_compile (line 43)
+  In compile (line 50)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/star-cascade/cascade.cc: In function 'void init(const mxArray**)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/star-cascade/cascade.cc:230:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 1; i < MODEL->numlevels+1; i++) {
+                                        ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 52)
+  In pascal (line 22)] 
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 53)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/features/features.cc: In function 'mxArray* process(const mxArray*, const mxArray*)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/features/features.cc:289:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0; x < out[1]; x++) {
+                            ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/features/features.cc:290:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y = 0; y < out[0]; y++) {
+                              ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 54)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/dt.cc: In function 'void mexFunction(int, mxArray**, int, const mxArray**)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/dt.cc:68:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0; x < dims[1]; x++)
+                             ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/dt.cc:71:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int y = 0; y < dims[0]; y++)
+                             ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/dt.cc:75:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0; x < dims[1]; x++) {
+                             ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/dt.cc:76:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y = 0; y < dims[0]; y++) {
+                               ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 55)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/bounded_dt.cc: In function 'void mexFunction(int, mxArray**, int, const mxArray**)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/bounded_dt.cc:57:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0; x < dims[1]; x++)
+                             ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/bounded_dt.cc:60:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int y = 0; y < dims[0]; y++)
+                             ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/bounded_dt.cc:64:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0; x < dims[1]; x++) {
+                             ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/bounded_dt.cc:65:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y = 0; y < dims[0]; y++) {
+                               ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 56)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/get_detection_trees.cc: In function 'void backtrack(int, int, int, int, double, mxArray*, double*, mwSize*, double*, mwSize*, bool)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/get_detection_trees.cc:322:45: warning: narrowing conversion of 'ctx.context::next_id' from 'int' to 'mwSize {aka long unsigned int}' inside { } [-Wnarrowing]
+   mwSize dims[] = { node::N_SZ, ctx.next_id };
+                                             ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/get_detection_trees.cc: In function 'void mexFunction(int, mxArray**, int, const mxArray**)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/get_detection_trees.cc:400:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i < dim[0]; i++)
+                            ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 57)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/compute_overlap.cc: In function 'void mexFunction(int, mxArray**, int, const mxArray**)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/compute_overlap.cc:50:48: warning: narrowing conversion of 'feat_dim_y' from 'const int' to 'const mwSize {aka const long unsigned int}' inside { } [-Wnarrowing]
+   const mwSize dims[] = {feat_dim_y, feat_dim_x};
+                                                ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/compute_overlap.cc:50:48: warning: narrowing conversion of 'feat_dim_x' from 'const int' to 'const mwSize {aka const long unsigned int}' inside { } [-Wnarrowing]
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 64)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/fconvsse.cc: In function 'float* prepare(float*, const mwSize*)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/fconvsse.cc:133:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int x = 0; x < dims[1]; x++) {
+                             ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/fconvsse.cc:134:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int y = 0; y < dims[0]; y++) {
+                               ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/fconvsse.cc:135:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int f = 0; f < dims[2]; f++)
+                                 ^
+
+MEX completed successfully.
+Building with 'g++'.
+[Warning: You are using gcc version '4.8.5-16)'. The version of gcc is not
+supported. The version currently supported with MEX is '6.3.x'. For a list of
+currently supported compilers see:
+https://www.mathworks.com/support/compilers/current_release.] 
+[> In compile (line 72)
+  In pascal (line 22)] 
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/fconv_var_dim_MT.cc: In function 'void* process(void*)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/fconv_var_dim_MT.cc:38:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int x = 0; x < C_dims[1]; x++) {
+                                 ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/fconv_var_dim_MT.cc:39:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int y = 0; y < C_dims[0]; y++) {
+                                   ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/fconv_var_dim_MT.cc:41:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int xp = 0; xp < B_dims[1]; xp++) {
+                                       ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/fconv_var_dim_MT.cc:67:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+               for (int yp = 0; yp < B_dims[0]; yp++) {
+                                             ^
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/fconv_var_dim_MT.cc: In function 'void mexFunction(int, mxArray**, int, const mxArray**)':
+/data/home/mb95563/pascalraw-mix2000-bicycle/voc-release5-raw/gdetect/fconv_var_dim_MT.cc:98:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (start < 0 || end >= num_bs || start > end)
+                           ^
+
+MEX completed successfully.
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+Elapsed time is 2.152095 seconds.
+Cache freed; byte size is: 0
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+bicycle: pr: load: 31/2130
+bicycle: pr: load: 151/2130
+bicycle: pr: load: 270/2130
+bicycle: pr: load: 422/2130
+bicycle: pr: load: 567/2130
+bicycle: pr: load: 724/2130
+bicycle: pr: load: 849/2130
+bicycle: pr: load: 1002/2130
+bicycle: pr: load: 1113/2130
+bicycle: pr: load: 1273/2130
+bicycle: pr: load: 1413/2130
+bicycle: pr: load: 1556/2130
+bicycle: pr: load: 1711/2130
+bicycle: pr: load: 1877/2130
+bicycle: pr: load: 2018/2130
+bicycle: pr: load: 2126/2130
+bicycle: pr: evaluating detections
+AP = 0.7840 (without bounding box prediction)
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+voc-release5-raw bicycle: bboxdata: 2/716
+voc-release5-raw bicycle: bboxdata: 4/716
+voc-release5-raw bicycle: bboxdata: 6/716
+voc-release5-raw bicycle: bboxdata: 10/716
+voc-release5-raw bicycle: bboxdata: 14/716
+voc-release5-raw bicycle: bboxdata: 16/716
+voc-release5-raw bicycle: bboxdata: 8/716
+voc-release5-raw bicycle: bboxdata: 12/716
+voc-release5-raw bicycle: bboxdata: 18/716
+voc-release5-raw bicycle: bboxdata: 20/716
+voc-release5-raw bicycle: bboxdata: 22/716
+voc-release5-raw bicycle: bboxdata: 24/716
+voc-release5-raw bicycle: bboxdata: 26/716
+voc-release5-raw bicycle: bboxdata: 28/716
+voc-release5-raw bicycle: bboxdata: 30/716
+voc-release5-raw bicycle: bboxdata: 32/716
+voc-release5-raw bicycle: bboxdata: 34/716
+voc-release5-raw bicycle: bboxdata: 36/716
+voc-release5-raw bicycle: bboxdata: 38/716
+voc-release5-raw bicycle: bboxdata: 40/716
+voc-release5-raw bicycle: bboxdata: 5/716
+voc-release5-raw bicycle: bboxdata: 9/716
+voc-release5-raw bicycle: bboxdata: 15/716
+voc-release5-raw bicycle: bboxdata: 27/716
+voc-release5-raw bicycle: bboxdata: 29/716
+voc-release5-raw bicycle: bboxdata: 7/716
+voc-release5-raw bicycle: bboxdata: 25/716
+voc-release5-raw bicycle: bboxdata: 1/716
+voc-release5-raw bicycle: bboxdata: 3/716
+voc-release5-raw bicycle: bboxdata: 91/716
+voc-release5-raw bicycle: bboxdata: 125/716
+voc-release5-raw bicycle: bboxdata: 11/716
+voc-release5-raw bicycle: bboxdata: 13/716
+voc-release5-raw bicycle: bboxdata: 21/716
+voc-release5-raw bicycle: bboxdata: 295/716
+voc-release5-raw bicycle: bboxdata: 31/716
+voc-release5-raw bicycle: bboxdata: 33/716
+voc-release5-raw bicycle: bboxdata: 108/716
+voc-release5-raw bicycle: bboxdata: 176/716
+voc-release5-raw bicycle: bboxdata: 17/716
+voc-release5-raw bicycle: bboxdata: 19/716
+voc-release5-raw bicycle: bboxdata: 23/716
+voc-release5-raw bicycle: bboxdata: 278/716
+voc-release5-raw bicycle: bboxdata: 35/716
+voc-release5-raw bicycle: bboxdata: 37/716
+voc-release5-raw bicycle: bboxdata: 39/716
+voc-release5-raw bicycle: bboxdata: 277/716
+voc-release5-raw bicycle: bboxdata: 107/716
+voc-release5-raw bicycle: bboxdata: 294/716
+voc-release5-raw bicycle: bboxdata: 90/716
+voc-release5-raw bicycle: bboxdata: 276/716
+voc-release5-raw bicycle: bboxdata: 106/716
+voc-release5-raw bicycle: bboxdata: 142/716
+voc-release5-raw bicycle: bboxdata: 159/716
+voc-release5-raw bicycle: bboxdata: 175/716
+voc-release5-raw bicycle: bboxdata: 261/716
+voc-release5-raw bicycle: bboxdata: 275/716
+voc-release5-raw bicycle: bboxdata: 57/716
+voc-release5-raw bicycle: bboxdata: 89/716
+voc-release5-raw bicycle: bboxdata: 124/716
+voc-release5-raw bicycle: bboxdata: 158/716
+voc-release5-raw bicycle: bboxdata: 174/716
+voc-release5-raw bicycle: bboxdata: 193/716
+voc-release5-raw bicycle: bboxdata: 210/716
+voc-release5-raw bicycle: bboxdata: 293/716
+voc-release5-raw bicycle: bboxdata: 329/716
+voc-release5-raw bicycle: bboxdata: 346/716
+voc-release5-raw bicycle: bboxdata: 380/716
+voc-release5-raw bicycle: bboxdata: 74/716
+voc-release5-raw bicycle: bboxdata: 88/716
+voc-release5-raw bicycle: bboxdata: 141/716
+voc-release5-raw bicycle: bboxdata: 209/716
+voc-release5-raw bicycle: bboxdata: 227/716
+voc-release5-raw bicycle: bboxdata: 244/716
+voc-release5-raw bicycle: bboxdata: 260/716
+voc-release5-raw bicycle: bboxdata: 259/716
+voc-release5-raw bicycle: bboxdata: 274/716
+voc-release5-raw bicycle: bboxdata: 312/716
+voc-release5-raw bicycle: bboxdata: 363/716
+voc-release5-raw bicycle: bboxdata: 56/716
+voc-release5-raw bicycle: bboxdata: 105/716
+voc-release5-raw bicycle: bboxdata: 123/716
+voc-release5-raw bicycle: bboxdata: 243/716
+voc-release5-raw bicycle: bboxdata: 292/716
+voc-release5-raw bicycle: bboxdata: 345/716
+voc-release5-raw bicycle: bboxdata: 379/716
+voc-release5-raw bicycle: bboxdata: 140/716
+voc-release5-raw bicycle: bboxdata: 157/716
+voc-release5-raw bicycle: bboxdata: 226/716
+voc-release5-raw bicycle: bboxdata: 242/716
+voc-release5-raw bicycle: bboxdata: 258/716
+voc-release5-raw bicycle: bboxdata: 311/716
+voc-release5-raw bicycle: bboxdata: 328/716
+voc-release5-raw bicycle: bboxdata: 55/716
+voc-release5-raw bicycle: bboxdata: 208/716
+voc-release5-raw bicycle: bboxdata: 241/716
+voc-release5-raw bicycle: bboxdata: 273/716
+voc-release5-raw bicycle: bboxdata: 291/716
+voc-release5-raw bicycle: bboxdata: 73/716
+voc-release5-raw bicycle: bboxdata: 87/716
+voc-release5-raw bicycle: bboxdata: 225/716
+voc-release5-raw bicycle: bboxdata: 240/716
+voc-release5-raw bicycle: bboxdata: 257/716
+voc-release5-raw bicycle: bboxdata: 272/716
+voc-release5-raw bicycle: bboxdata: 344/716
+voc-release5-raw bicycle: bboxdata: 54/716
+voc-release5-raw bicycle: bboxdata: 86/716
+voc-release5-raw bicycle: bboxdata: 173/716
+voc-release5-raw bicycle: bboxdata: 207/716
+voc-release5-raw bicycle: bboxdata: 239/716
+voc-release5-raw bicycle: bboxdata: 256/716
+voc-release5-raw bicycle: bboxdata: 271/716
+voc-release5-raw bicycle: bboxdata: 53/716
+voc-release5-raw bicycle: bboxdata: 72/716
+voc-release5-raw bicycle: bboxdata: 122/716
+voc-release5-raw bicycle: bboxdata: 139/716
+voc-release5-raw bicycle: bboxdata: 192/716
+voc-release5-raw bicycle: bboxdata: 224/716
+voc-release5-raw bicycle: bboxdata: 255/716
+voc-release5-raw bicycle: bboxdata: 270/716
+voc-release5-raw bicycle: bboxdata: 290/716
+voc-release5-raw bicycle: bboxdata: 310/716
+voc-release5-raw bicycle: bboxdata: 327/716
+voc-release5-raw bicycle: bboxdata: 326/716
+voc-release5-raw bicycle: bboxdata: 325/716
+voc-release5-raw bicycle: bboxdata: 378/716
+voc-release5-raw bicycle: bboxdata: 104/716
+voc-release5-raw bicycle: bboxdata: 156/716
+voc-release5-raw bicycle: bboxdata: 206/716
+voc-release5-raw bicycle: bboxdata: 223/716
+voc-release5-raw bicycle: bboxdata: 222/716
+voc-release5-raw bicycle: bboxdata: 238/716
+voc-release5-raw bicycle: bboxdata: 254/716
+voc-release5-raw bicycle: bboxdata: 269/716
+voc-release5-raw bicycle: bboxdata: 289/716
+voc-release5-raw bicycle: bboxdata: 288/716
+voc-release5-raw bicycle: bboxdata: 362/716
+voc-release5-raw bicycle: bboxdata: 361/716
+voc-release5-raw bicycle: bboxdata: 52/716
+voc-release5-raw bicycle: bboxdata: 103/716
+voc-release5-raw bicycle: bboxdata: 191/716
+voc-release5-raw bicycle: bboxdata: 205/716
+voc-release5-raw bicycle: bboxdata: 221/716
+voc-release5-raw bicycle: bboxdata: 220/716
+voc-release5-raw bicycle: bboxdata: 268/716
+voc-release5-raw bicycle: bboxdata: 343/716
+voc-release5-raw bicycle: bboxdata: 377/716
+voc-release5-raw bicycle: bboxdata: 376/716
+voc-release5-raw bicycle: bboxdata: 375/716
+voc-release5-raw bicycle: bboxdata: 374/716
+voc-release5-raw bicycle: bboxdata: 373/716
+voc-release5-raw bicycle: bboxdata: 372/716
+voc-release5-raw bicycle: bboxdata: 371/716
+voc-release5-raw bicycle: bboxdata: 370/716
+voc-release5-raw bicycle: bboxdata: 369/716
+voc-release5-raw bicycle: bboxdata: 368/716
+voc-release5-raw bicycle: bboxdata: 367/716
+voc-release5-raw bicycle: bboxdata: 366/716
+voc-release5-raw bicycle: bboxdata: 365/716
+voc-release5-raw bicycle: bboxdata: 71/716
+voc-release5-raw bicycle: bboxdata: 85/716
+voc-release5-raw bicycle: bboxdata: 102/716
+voc-release5-raw bicycle: bboxdata: 101/716
+voc-release5-raw bicycle: bboxdata: 121/716
+voc-release5-raw bicycle: bboxdata: 138/716
+voc-release5-raw bicycle: bboxdata: 155/716
+voc-release5-raw bicycle: bboxdata: 172/716
+voc-release5-raw bicycle: bboxdata: 204/716
+voc-release5-raw bicycle: bboxdata: 219/716
+voc-release5-raw bicycle: bboxdata: 218/716
+voc-release5-raw bicycle: bboxdata: 217/716
+voc-release5-raw bicycle: bboxdata: 237/716
+voc-release5-raw bicycle: bboxdata: 253/716
+voc-release5-raw bicycle: bboxdata: 252/716
+voc-release5-raw bicycle: bboxdata: 267/716
+voc-release5-raw bicycle: bboxdata: 287/716
+voc-release5-raw bicycle: bboxdata: 286/716
+voc-release5-raw bicycle: bboxdata: 309/716
+voc-release5-raw bicycle: bboxdata: 324/716
+voc-release5-raw bicycle: bboxdata: 137/716
+voc-release5-raw bicycle: bboxdata: 136/716
+voc-release5-raw bicycle: bboxdata: 216/716
+voc-release5-raw bicycle: bboxdata: 251/716
+voc-release5-raw bicycle: bboxdata: 250/716
+voc-release5-raw bicycle: bboxdata: 266/716
+voc-release5-raw bicycle: bboxdata: 285/716
+voc-release5-raw bicycle: bboxdata: 284/716
+voc-release5-raw bicycle: bboxdata: 360/716
+voc-release5-raw bicycle: bboxdata: 70/716
+voc-release5-raw bicycle: bboxdata: 100/716
+voc-release5-raw bicycle: bboxdata: 154/716
+voc-release5-raw bicycle: bboxdata: 171/716
+voc-release5-raw bicycle: bboxdata: 190/716
+voc-release5-raw bicycle: bboxdata: 203/716
+voc-release5-raw bicycle: bboxdata: 215/716
+voc-release5-raw bicycle: bboxdata: 214/716
+voc-release5-raw bicycle: bboxdata: 249/716
+voc-release5-raw bicycle: bboxdata: 248/716
+voc-release5-raw bicycle: bboxdata: 308/716
+voc-release5-raw bicycle: bboxdata: 342/716
+voc-release5-raw bicycle: bboxdata: 359/716
+voc-release5-raw bicycle: bboxdata: 364/716
+voc-release5-raw bicycle: bboxdata: 51/716
+voc-release5-raw bicycle: bboxdata: 84/716
+voc-release5-raw bicycle: bboxdata: 99/716
+voc-release5-raw bicycle: bboxdata: 120/716
+voc-release5-raw bicycle: bboxdata: 135/716
+voc-release5-raw bicycle: bboxdata: 134/716
+voc-release5-raw bicycle: bboxdata: 189/716
+voc-release5-raw bicycle: bboxdata: 213/716
+voc-release5-raw bicycle: bboxdata: 236/716
+voc-release5-raw bicycle: bboxdata: 247/716
+voc-release5-raw bicycle: bboxdata: 246/716
+voc-release5-raw bicycle: bboxdata: 265/716
+voc-release5-raw bicycle: bboxdata: 264/716
+voc-release5-raw bicycle: bboxdata: 283/716
+voc-release5-raw bicycle: bboxdata: 282/716
+voc-release5-raw bicycle: bboxdata: 307/716
+voc-release5-raw bicycle: bboxdata: 69/716
+voc-release5-raw bicycle: bboxdata: 68/716
+voc-release5-raw bicycle: bboxdata: 98/716
+voc-release5-raw bicycle: bboxdata: 119/716
+voc-release5-raw bicycle: bboxdata: 133/716
+voc-release5-raw bicycle: bboxdata: 153/716
+voc-release5-raw bicycle: bboxdata: 170/716
+voc-release5-raw bicycle: bboxdata: 202/716
+voc-release5-raw bicycle: bboxdata: 235/716
+voc-release5-raw bicycle: bboxdata: 234/716
+voc-release5-raw bicycle: bboxdata: 245/716
+voc-release5-raw bicycle: bboxdata: 263/716
+voc-release5-raw bicycle: bboxdata: 262/716
+voc-release5-raw bicycle: bboxdata: 281/716
+voc-release5-raw bicycle: bboxdata: 280/716
+voc-release5-raw bicycle: bboxdata: 323/716
+voc-release5-raw bicycle: bboxdata: 341/716
+voc-release5-raw bicycle: bboxdata: 358/716
+voc-release5-raw bicycle: bboxdata: 476/716
+voc-release5-raw bicycle: bboxdata: 475/716
+voc-release5-raw bicycle: bboxdata: 212/716
+voc-release5-raw bicycle: bboxdata: 211/716
+voc-release5-raw bicycle: bboxdata: 404/716
+voc-release5-raw bicycle: bboxdata: 403/716
+voc-release5-raw bicycle: bboxdata: 402/716
+voc-release5-raw bicycle: bboxdata: 279/716
+voc-release5-raw bicycle: bboxdata: 306/716
+voc-release5-raw bicycle: bboxdata: 340/716
+voc-release5-raw bicycle: bboxdata: 357/716
+voc-release5-raw bicycle: bboxdata: 50/716
+voc-release5-raw bicycle: bboxdata: 67/716
+voc-release5-raw bicycle: bboxdata: 83/716
+voc-release5-raw bicycle: bboxdata: 118/716
+voc-release5-raw bicycle: bboxdata: 132/716
+voc-release5-raw bicycle: bboxdata: 169/716
+voc-release5-raw bicycle: bboxdata: 188/716
+voc-release5-raw bicycle: bboxdata: 201/716
+voc-release5-raw bicycle: bboxdata: 233/716
+voc-release5-raw bicycle: bboxdata: 420/716
+voc-release5-raw bicycle: bboxdata: 66/716
+voc-release5-raw bicycle: bboxdata: 97/716
+voc-release5-raw bicycle: bboxdata: 152/716
+voc-release5-raw bicycle: bboxdata: 500/716
+voc-release5-raw bicycle: bboxdata: 499/716
+voc-release5-raw bicycle: bboxdata: 436/716
+voc-release5-raw bicycle: bboxdata: 435/716
+voc-release5-raw bicycle: bboxdata: 401/716
+voc-release5-raw bicycle: bboxdata: 322/716
+voc-release5-raw bicycle: bboxdata: 339/716
+voc-release5-raw bicycle: bboxdata: 338/716
+voc-release5-raw bicycle: bboxdata: 356/716
+voc-release5-raw bicycle: bboxdata: 474/716
+voc-release5-raw bicycle: bboxdata: 49/716
+voc-release5-raw bicycle: bboxdata: 48/716
+voc-release5-raw bicycle: bboxdata: 47/716
+voc-release5-raw bicycle: bboxdata: 131/716
+voc-release5-raw bicycle: bboxdata: 168/716
+voc-release5-raw bicycle: bboxdata: 200/716
+voc-release5-raw bicycle: bboxdata: 232/716
+voc-release5-raw bicycle: bboxdata: 400/716
+voc-release5-raw bicycle: bboxdata: 419/716
+voc-release5-raw bicycle: bboxdata: 305/716
+voc-release5-raw bicycle: bboxdata: 46/716
+voc-release5-raw bicycle: bboxdata: 65/716
+voc-release5-raw bicycle: bboxdata: 82/716
+voc-release5-raw bicycle: bboxdata: 96/716
+voc-release5-raw bicycle: bboxdata: 117/716
+voc-release5-raw bicycle: bboxdata: 130/716
+voc-release5-raw bicycle: bboxdata: 187/716
+voc-release5-raw bicycle: bboxdata: 199/716
+voc-release5-raw bicycle: bboxdata: 198/716
+voc-release5-raw bicycle: bboxdata: 498/716
+voc-release5-raw bicycle: bboxdata: 231/716
+voc-release5-raw bicycle: bboxdata: 230/716
+voc-release5-raw bicycle: bboxdata: 434/716
+voc-release5-raw bicycle: bboxdata: 399/716
+voc-release5-raw bicycle: bboxdata: 398/716
+voc-release5-raw bicycle: bboxdata: 321/716
+voc-release5-raw bicycle: bboxdata: 320/716
+voc-release5-raw bicycle: bboxdata: 319/716
+voc-release5-raw bicycle: bboxdata: 337/716
+voc-release5-raw bicycle: bboxdata: 336/716
+voc-release5-raw bicycle: bboxdata: 355/716
+voc-release5-raw bicycle: bboxdata: 473/716
+voc-release5-raw bicycle: bboxdata: 151/716
+voc-release5-raw bicycle: bboxdata: 497/716
+voc-release5-raw bicycle: bboxdata: 397/716
+voc-release5-raw bicycle: bboxdata: 418/716
+voc-release5-raw bicycle: bboxdata: 304/716
+voc-release5-raw bicycle: bboxdata: 64/716
+voc-release5-raw bicycle: bboxdata: 81/716
+voc-release5-raw bicycle: bboxdata: 186/716
+voc-release5-raw bicycle: bboxdata: 496/716
+voc-release5-raw bicycle: bboxdata: 495/716
+voc-release5-raw bicycle: bboxdata: 433/716
+voc-release5-raw bicycle: bboxdata: 354/716
+voc-release5-raw bicycle: bboxdata: 472/716
+voc-release5-raw bicycle: bboxdata: 45/716
+voc-release5-raw bicycle: bboxdata: 116/716
+voc-release5-raw bicycle: bboxdata: 129/716
+voc-release5-raw bicycle: bboxdata: 167/716
+voc-release5-raw bicycle: bboxdata: 197/716
+voc-release5-raw bicycle: bboxdata: 229/716
+voc-release5-raw bicycle: bboxdata: 432/716
+voc-release5-raw bicycle: bboxdata: 548/716
+voc-release5-raw bicycle: bboxdata: 547/716
+voc-release5-raw bicycle: bboxdata: 546/716
+voc-release5-raw bicycle: bboxdata: 303/716
+voc-release5-raw bicycle: bboxdata: 318/716
+voc-release5-raw bicycle: bboxdata: 335/716
+voc-release5-raw bicycle: bboxdata: 95/716
+voc-release5-raw bicycle: bboxdata: 150/716
+voc-release5-raw bicycle: bboxdata: 417/716
+voc-release5-raw bicycle: bboxdata: 317/716
+voc-release5-raw bicycle: bboxdata: 316/716
+voc-release5-raw bicycle: bboxdata: 315/716
+voc-release5-raw bicycle: bboxdata: 314/716
+voc-release5-raw bicycle: bboxdata: 313/716
+voc-release5-raw bicycle: bboxdata: 63/716
+voc-release5-raw bicycle: bboxdata: 80/716
+voc-release5-raw bicycle: bboxdata: 79/716
+voc-release5-raw bicycle: bboxdata: 128/716
+voc-release5-raw bicycle: bboxdata: 185/716
+voc-release5-raw bicycle: bboxdata: 184/716
+voc-release5-raw bicycle: bboxdata: 494/716
+voc-release5-raw bicycle: bboxdata: 493/716
+voc-release5-raw bicycle: bboxdata: 545/716
+voc-release5-raw bicycle: bboxdata: 353/716
+voc-release5-raw bicycle: bboxdata: 44/716
+voc-release5-raw bicycle: bboxdata: 115/716
+voc-release5-raw bicycle: bboxdata: 149/716
+voc-release5-raw bicycle: bboxdata: 471/716
+voc-release5-raw bicycle: bboxdata: 166/716
+voc-release5-raw bicycle: bboxdata: 196/716
+voc-release5-raw bicycle: bboxdata: 556/716
+voc-release5-raw bicycle: bboxdata: 228/716
+voc-release5-raw bicycle: bboxdata: 416/716
+voc-release5-raw bicycle: bboxdata: 302/716
+voc-release5-raw bicycle: bboxdata: 334/716
+voc-release5-raw bicycle: bboxdata: 352/716
+voc-release5-raw bicycle: bboxdata: 78/716
+voc-release5-raw bicycle: bboxdata: 94/716
+voc-release5-raw bicycle: bboxdata: 114/716
+voc-release5-raw bicycle: bboxdata: 127/716
+voc-release5-raw bicycle: bboxdata: 148/716
+voc-release5-raw bicycle: bboxdata: 165/716
+voc-release5-raw bicycle: bboxdata: 183/716
+voc-release5-raw bicycle: bboxdata: 555/716
+voc-release5-raw bicycle: bboxdata: 554/716
+voc-release5-raw bicycle: bboxdata: 431/716
+voc-release5-raw bicycle: bboxdata: 564/716
+voc-release5-raw bicycle: bboxdata: 563/716
+voc-release5-raw bicycle: bboxdata: 415/716
+voc-release5-raw bicycle: bboxdata: 468/716
+voc-release5-raw bicycle: bboxdata: 467/716
+voc-release5-raw bicycle: bboxdata: 351/716
+voc-release5-raw bicycle: bboxdata: 43/716
+voc-release5-raw bicycle: bboxdata: 62/716
+voc-release5-raw bicycle: bboxdata: 77/716
+voc-release5-raw bicycle: bboxdata: 93/716
+voc-release5-raw bicycle: bboxdata: 126/716
+voc-release5-raw bicycle: bboxdata: 195/716
+voc-release5-raw bicycle: bboxdata: 553/716
+voc-release5-raw bicycle: bboxdata: 508/716
+voc-release5-raw bicycle: bboxdata: 507/716
+voc-release5-raw bicycle: bboxdata: 414/716
+voc-release5-raw bicycle: bboxdata: 301/716
+voc-release5-raw bicycle: bboxdata: 470/716
+voc-release5-raw bicycle: bboxdata: 113/716
+voc-release5-raw bicycle: bboxdata: 112/716
+voc-release5-raw bicycle: bboxdata: 147/716
+voc-release5-raw bicycle: bboxdata: 164/716
+voc-release5-raw bicycle: bboxdata: 182/716
+voc-release5-raw bicycle: bboxdata: 576/716
+voc-release5-raw bicycle: bboxdata: 506/716
+voc-release5-raw bicycle: bboxdata: 300/716
+voc-release5-raw bicycle: bboxdata: 466/716
+voc-release5-raw bicycle: bboxdata: 333/716
+voc-release5-raw bicycle: bboxdata: 76/716
+voc-release5-raw bicycle: bboxdata: 92/716
+voc-release5-raw bicycle: bboxdata: 111/716
+voc-release5-raw bicycle: bboxdata: 163/716
+voc-release5-raw bicycle: bboxdata: 194/716
+voc-release5-raw bicycle: bboxdata: 575/716
+voc-release5-raw bicycle: bboxdata: 574/716
+voc-release5-raw bicycle: bboxdata: 573/716
+voc-release5-raw bicycle: bboxdata: 430/716
+voc-release5-raw bicycle: bboxdata: 562/716
+voc-release5-raw bicycle: bboxdata: 350/716
+voc-release5-raw bicycle: bboxdata: 61/716
+voc-release5-raw bicycle: bboxdata: 110/716
+voc-release5-raw bicycle: bboxdata: 181/716
+voc-release5-raw bicycle: bboxdata: 505/716
+voc-release5-raw bicycle: bboxdata: 413/716
+voc-release5-raw bicycle: bboxdata: 465/716
+voc-release5-raw bicycle: bboxdata: 332/716
+voc-release5-raw bicycle: bboxdata: 349/716
+voc-release5-raw bicycle: bboxdata: 348/716
+voc-release5-raw bicycle: bboxdata: 469/716
+voc-release5-raw bicycle: bboxdata: 42/716
+voc-release5-raw bicycle: bboxdata: 428/716
+voc-release5-raw bicycle: bboxdata: 109/716
+voc-release5-raw bicycle: bboxdata: 460/716
+voc-release5-raw bicycle: bboxdata: 146/716
+voc-release5-raw bicycle: bboxdata: 162/716
+voc-release5-raw bicycle: bboxdata: 161/716
+voc-release5-raw bicycle: bboxdata: 429/716
+voc-release5-raw bicycle: bboxdata: 299/716
+voc-release5-raw bicycle: bboxdata: 347/716
+voc-release5-raw bicycle: bboxdata: 180/716
+voc-release5-raw bicycle: bboxdata: 552/716
+voc-release5-raw bicycle: bboxdata: 551/716
+voc-release5-raw bicycle: bboxdata: 331/716
+voc-release5-raw bicycle: bboxdata: 41/716
+voc-release5-raw bicycle: bboxdata: 60/716
+voc-release5-raw bicycle: bboxdata: 75/716
+voc-release5-raw bicycle: bboxdata: 459/716
+voc-release5-raw bicycle: bboxdata: 458/716
+voc-release5-raw bicycle: bboxdata: 145/716
+voc-release5-raw bicycle: bboxdata: 160/716
+voc-release5-raw bicycle: bboxdata: 584/716
+voc-release5-raw bicycle: bboxdata: 583/716
+voc-release5-raw bicycle: bboxdata: 504/716
+voc-release5-raw bicycle: bboxdata: 561/716
+voc-release5-raw bicycle: bboxdata: 560/716
+voc-release5-raw bicycle: bboxdata: 298/716
+voc-release5-raw bicycle: bboxdata: 464/716
+voc-release5-raw bicycle: bboxdata: 544/716
+voc-release5-raw bicycle: bboxdata: 412/716
+voc-release5-raw bicycle: bboxdata: 484/716
+voc-release5-raw bicycle: bboxdata: 550/716
+voc-release5-raw bicycle: bboxdata: 549/716
+voc-release5-raw bicycle: bboxdata: 463/716
+voc-release5-raw bicycle: bboxdata: 330/716
+voc-release5-raw bicycle: bboxdata: 427/716
+voc-release5-raw bicycle: bboxdata: 457/716
+voc-release5-raw bicycle: bboxdata: 456/716
+voc-release5-raw bicycle: bboxdata: 144/716
+voc-release5-raw bicycle: bboxdata: 396/716
+voc-release5-raw bicycle: bboxdata: 395/716
+voc-release5-raw bicycle: bboxdata: 592/716
+voc-release5-raw bicycle: bboxdata: 559/716
+voc-release5-raw bicycle: bboxdata: 297/716
+voc-release5-raw bicycle: bboxdata: 540/716
+voc-release5-raw bicycle: bboxdata: 539/716
+voc-release5-raw bicycle: bboxdata: 543/716
+voc-release5-raw bicycle: bboxdata: 59/716
+voc-release5-raw bicycle: bboxdata: 388/716
+voc-release5-raw bicycle: bboxdata: 426/716
+voc-release5-raw bicycle: bboxdata: 143/716
+voc-release5-raw bicycle: bboxdata: 394/716
+voc-release5-raw bicycle: bboxdata: 179/716
+voc-release5-raw bicycle: bboxdata: 483/716
+voc-release5-raw bicycle: bboxdata: 582/716
+voc-release5-raw bicycle: bboxdata: 581/716
+voc-release5-raw bicycle: bboxdata: 503/716
+voc-release5-raw bicycle: bboxdata: 591/716
+voc-release5-raw bicycle: bboxdata: 590/716
+voc-release5-raw bicycle: bboxdata: 572/716
+voc-release5-raw bicycle: bboxdata: 558/716
+voc-release5-raw bicycle: bboxdata: 296/716
+voc-release5-raw bicycle: bboxdata: 462/716
+voc-release5-raw bicycle: bboxdata: 542/716
+voc-release5-raw bicycle: bboxdata: 393/716
+voc-release5-raw bicycle: bboxdata: 392/716
+voc-release5-raw bicycle: bboxdata: 391/716
+voc-release5-raw bicycle: bboxdata: 589/716
+voc-release5-raw bicycle: bboxdata: 461/716
+voc-release5-raw bicycle: bboxdata: 541/716
+voc-release5-raw bicycle: bboxdata: 387/716
+voc-release5-raw bicycle: bboxdata: 386/716
+voc-release5-raw bicycle: bboxdata: 411/716
+voc-release5-raw bicycle: bboxdata: 390/716
+voc-release5-raw bicycle: bboxdata: 389/716
+voc-release5-raw bicycle: bboxdata: 588/716
+voc-release5-raw bicycle: bboxdata: 587/716
+voc-release5-raw bicycle: bboxdata: 502/716
+voc-release5-raw bicycle: bboxdata: 571/716
+voc-release5-raw bicycle: bboxdata: 452/716
+voc-release5-raw bicycle: bboxdata: 58/716
+voc-release5-raw bicycle: bboxdata: 425/716
+voc-release5-raw bicycle: bboxdata: 455/716
+voc-release5-raw bicycle: bboxdata: 444/716
+voc-release5-raw bicycle: bboxdata: 178/716
+voc-release5-raw bicycle: bboxdata: 482/716
+voc-release5-raw bicycle: bboxdata: 586/716
+voc-release5-raw bicycle: bboxdata: 624/716
+voc-release5-raw bicycle: bboxdata: 557/716
+voc-release5-raw bicycle: bboxdata: 532/716
+voc-release5-raw bicycle: bboxdata: 568/716
+voc-release5-raw bicycle: bboxdata: 492/716
+voc-release5-raw bicycle: bboxdata: 538/716
+voc-release5-raw bicycle: bboxdata: 385/716
+voc-release5-raw bicycle: bboxdata: 384/716
+voc-release5-raw bicycle: bboxdata: 410/716
+voc-release5-raw bicycle: bboxdata: 443/716
+voc-release5-raw bicycle: bboxdata: 622/716
+voc-release5-raw bicycle: bboxdata: 481/716
+voc-release5-raw bicycle: bboxdata: 480/716
+voc-release5-raw bicycle: bboxdata: 623/716
+voc-release5-raw bicycle: bboxdata: 567/716
+voc-release5-raw bicycle: bboxdata: 491/716
+voc-release5-raw bicycle: bboxdata: 537/716
+voc-release5-raw bicycle: bboxdata: 536/716
+voc-release5-raw bicycle: bboxdata: 612/716
+voc-release5-raw bicycle: bboxdata: 611/716
+voc-release5-raw bicycle: bboxdata: 454/716
+voc-release5-raw bicycle: bboxdata: 177/716
+voc-release5-raw bicycle: bboxdata: 501/716
+voc-release5-raw bicycle: bboxdata: 570/716
+voc-release5-raw bicycle: bboxdata: 531/716
+voc-release5-raw bicycle: bboxdata: 566/716
+voc-release5-raw bicycle: bboxdata: 490/716
+voc-release5-raw bicycle: bboxdata: 610/716
+voc-release5-raw bicycle: bboxdata: 609/716
+voc-release5-raw bicycle: bboxdata: 451/716
+voc-release5-raw bicycle: bboxdata: 524/716
+voc-release5-raw bicycle: bboxdata: 383/716
+voc-release5-raw bicycle: bboxdata: 382/716
+voc-release5-raw bicycle: bboxdata: 424/716
+voc-release5-raw bicycle: bboxdata: 442/716
+voc-release5-raw bicycle: bboxdata: 621/716
+voc-release5-raw bicycle: bboxdata: 479/716
+voc-release5-raw bicycle: bboxdata: 478/716
+voc-release5-raw bicycle: bboxdata: 477/716
+voc-release5-raw bicycle: bboxdata: 585/716
+voc-release5-raw bicycle: bboxdata: 636/716
+voc-release5-raw bicycle: bboxdata: 635/716
+voc-release5-raw bicycle: bboxdata: 608/716
+voc-release5-raw bicycle: bboxdata: 535/716
+voc-release5-raw bicycle: bboxdata: 381/716
+voc-release5-raw bicycle: bboxdata: 409/716
+voc-release5-raw bicycle: bboxdata: 408/716
+voc-release5-raw bicycle: bboxdata: 407/716
+voc-release5-raw bicycle: bboxdata: 646/716
+voc-release5-raw bicycle: bboxdata: 645/716
+voc-release5-raw bicycle: bboxdata: 648/716
+voc-release5-raw bicycle: bboxdata: 607/716
+voc-release5-raw bicycle: bboxdata: 632/716
+voc-release5-raw bicycle: bboxdata: 453/716
+voc-release5-raw bicycle: bboxdata: 441/716
+voc-release5-raw bicycle: bboxdata: 516/716
+voc-release5-raw bicycle: bboxdata: 616/716
+voc-release5-raw bicycle: bboxdata: 647/716
+voc-release5-raw bicycle: bboxdata: 530/716
+voc-release5-raw bicycle: bboxdata: 450/716
+voc-release5-raw bicycle: bboxdata: 626/716
+voc-release5-raw bicycle: bboxdata: 625/716
+voc-release5-raw bicycle: bboxdata: 423/716
+voc-release5-raw bicycle: bboxdata: 440/716
+voc-release5-raw bicycle: bboxdata: 650/716
+voc-release5-raw bicycle: bboxdata: 615/716
+voc-release5-raw bicycle: bboxdata: 614/716
+voc-release5-raw bicycle: bboxdata: 606/716
+voc-release5-raw bicycle: bboxdata: 605/716
+voc-release5-raw bicycle: bboxdata: 565/716
+voc-release5-raw bicycle: bboxdata: 489/716
+voc-release5-raw bicycle: bboxdata: 488/716
+voc-release5-raw bicycle: bboxdata: 487/716
+voc-release5-raw bicycle: bboxdata: 534/716
+voc-release5-raw bicycle: bboxdata: 523/716
+voc-release5-raw bicycle: bboxdata: 580/716
+voc-release5-raw bicycle: bboxdata: 579/716
+voc-release5-raw bicycle: bboxdata: 578/716
+voc-release5-raw bicycle: bboxdata: 577/716
+voc-release5-raw bicycle: bboxdata: 569/716
+voc-release5-raw bicycle: bboxdata: 406/716
+voc-release5-raw bicycle: bboxdata: 596/716
+voc-release5-raw bicycle: bboxdata: 515/716
+voc-release5-raw bicycle: bboxdata: 613/716
+voc-release5-raw bicycle: bboxdata: 630/716
+voc-release5-raw bicycle: bboxdata: 529/716
+voc-release5-raw bicycle: bboxdata: 528/716
+voc-release5-raw bicycle: bboxdata: 631/716
+voc-release5-raw bicycle: bboxdata: 662/716
+voc-release5-raw bicycle: bboxdata: 661/716
+voc-release5-raw bicycle: bboxdata: 629/716
+voc-release5-raw bicycle: bboxdata: 652/716
+voc-release5-raw bicycle: bboxdata: 595/716
+voc-release5-raw bicycle: bboxdata: 439/716
+voc-release5-raw bicycle: bboxdata: 649/716
+voc-release5-raw bicycle: bboxdata: 514/716
+voc-release5-raw bicycle: bboxdata: 671/716
+voc-release5-raw bicycle: bboxdata: 670/716
+voc-release5-raw bicycle: bboxdata: 651/716
+voc-release5-raw bicycle: bboxdata: 449/716
+voc-release5-raw bicycle: bboxdata: 522/716
+voc-release5-raw bicycle: bboxdata: 660/716
+voc-release5-raw bicycle: bboxdata: 659/716
+voc-release5-raw bicycle: bboxdata: 674/716
+voc-release5-raw bicycle: bboxdata: 673/716
+voc-release5-raw bicycle: bboxdata: 658/716
+voc-release5-raw bicycle: bboxdata: 657/716
+voc-release5-raw bicycle: bboxdata: 486/716
+voc-release5-raw bicycle: bboxdata: 686/716
+voc-release5-raw bicycle: bboxdata: 685/716
+voc-release5-raw bicycle: bboxdata: 422/716
+voc-release5-raw bicycle: bboxdata: 405/716
+voc-release5-raw bicycle: bboxdata: 594/716
+voc-release5-raw bicycle: bboxdata: 438/716
+voc-release5-raw bicycle: bboxdata: 668/716
+voc-release5-raw bicycle: bboxdata: 672/716
+voc-release5-raw bicycle: bboxdata: 628/716
+voc-release5-raw bicycle: bboxdata: 683/716
+voc-release5-raw bicycle: bboxdata: 527/716
+voc-release5-raw bicycle: bboxdata: 638/716
+voc-release5-raw bicycle: bboxdata: 533/716
+voc-release5-raw bicycle: bboxdata: 656/716
+voc-release5-raw bicycle: bboxdata: 448/716
+voc-release5-raw bicycle: bboxdata: 521/716
+voc-release5-raw bicycle: bboxdata: 593/716
+voc-release5-raw bicycle: bboxdata: 667/716
+voc-release5-raw bicycle: bboxdata: 513/716
+voc-release5-raw bicycle: bboxdata: 692/716
+voc-release5-raw bicycle: bboxdata: 669/716
+voc-release5-raw bicycle: bboxdata: 627/716
+voc-release5-raw bicycle: bboxdata: 682/716
+voc-release5-raw bicycle: bboxdata: 637/716
+voc-release5-raw bicycle: bboxdata: 485/716
+voc-release5-raw bicycle: bboxdata: 655/716
+voc-release5-raw bicycle: bboxdata: 437/716
+voc-release5-raw bicycle: bboxdata: 666/716
+voc-release5-raw bicycle: bboxdata: 665/716
+voc-release5-raw bicycle: bboxdata: 701/716
+voc-release5-raw bicycle: bboxdata: 700/716
+voc-release5-raw bicycle: bboxdata: 704/716
+voc-release5-raw bicycle: bboxdata: 707/716
+voc-release5-raw bicycle: bboxdata: 520/716
+voc-release5-raw bicycle: bboxdata: 684/716
+voc-release5-raw bicycle: bboxdata: 421/716
+voc-release5-raw bicycle: bboxdata: 710/716
+voc-release5-raw bicycle: bboxdata: 691/716
+voc-release5-raw bicycle: bboxdata: 690/716
+voc-release5-raw bicycle: bboxdata: 695/716
+voc-release5-raw bicycle: bboxdata: 681/716
+voc-release5-raw bicycle: bboxdata: 447/716
+voc-release5-raw bicycle: bboxdata: 680/716
+voc-release5-raw bicycle: bboxdata: 713/716
+voc-release5-raw bicycle: bboxdata: 526/716
+voc-release5-raw bicycle: bboxdata: 604/716
+voc-release5-raw bicycle: bboxdata: 706/716
+voc-release5-raw bicycle: bboxdata: 705/716
+voc-release5-raw bicycle: bboxdata: 519/716
+voc-release5-raw bicycle: bboxdata: 689/716
+voc-release5-raw bicycle: bboxdata: 688/716
+voc-release5-raw bicycle: bboxdata: 620/716
+voc-release5-raw bicycle: bboxdata: 619/716
+voc-release5-raw bicycle: bboxdata: 634/716
+voc-release5-raw bicycle: bboxdata: 709/716
+voc-release5-raw bicycle: bboxdata: 708/716
+voc-release5-raw bicycle: bboxdata: 512/716
+voc-release5-raw bicycle: bboxdata: 694/716
+voc-release5-raw bicycle: bboxdata: 677/716
+voc-release5-raw bicycle: bboxdata: 699/716
+voc-release5-raw bicycle: bboxdata: 698/716
+voc-release5-raw bicycle: bboxdata: 703/716
+voc-release5-raw bicycle: bboxdata: 644/716
+voc-release5-raw bicycle: bboxdata: 643/716
+voc-release5-raw bicycle: bboxdata: 603/716
+voc-release5-raw bicycle: bboxdata: 602/716
+voc-release5-raw bicycle: bboxdata: 446/716
+voc-release5-raw bicycle: bboxdata: 445/716
+voc-release5-raw bicycle: bboxdata: 600/716
+voc-release5-raw bicycle: bboxdata: 633/716
+voc-release5-raw bicycle: bboxdata: 712/716
+voc-release5-raw bicycle: bboxdata: 518/716
+voc-release5-raw bicycle: bboxdata: 687/716
+voc-release5-raw bicycle: bboxdata: 618/716
+voc-release5-raw bicycle: bboxdata: 679/716
+voc-release5-raw bicycle: bboxdata: 697/716
+voc-release5-raw bicycle: bboxdata: 696/716
+voc-release5-raw bicycle: bboxdata: 525/716
+voc-release5-raw bicycle: bboxdata: 702/716
+voc-release5-raw bicycle: bboxdata: 601/716
+voc-release5-raw bicycle: bboxdata: 642/716
+voc-release5-raw bicycle: bboxdata: 641/716
+voc-release5-raw bicycle: bboxdata: 599/716
+voc-release5-raw bicycle: bboxdata: 598/716
+voc-release5-raw bicycle: bboxdata: 711/716
+voc-release5-raw bicycle: bboxdata: 693/716
+voc-release5-raw bicycle: bboxdata: 676/716
+voc-release5-raw bicycle: bboxdata: 675/716
+voc-release5-raw bicycle: bboxdata: 716/716
+voc-release5-raw bicycle: bboxdata: 517/716
+voc-release5-raw bicycle: bboxdata: 597/716
+voc-release5-raw bicycle: bboxdata: 617/716
+voc-release5-raw bicycle: bboxdata: 678/716
+voc-release5-raw bicycle: bboxdata: 640/716
+voc-release5-raw bicycle: bboxdata: 511/716
+voc-release5-raw bicycle: bboxdata: 715/716
+voc-release5-raw bicycle: bboxdata: 639/716
+voc-release5-raw bicycle: bboxdata: 654/716
+voc-release5-raw bicycle: bboxdata: 653/716
+voc-release5-raw bicycle: bboxdata: 510/716
+voc-release5-raw bicycle: bboxdata: 714/716
+voc-release5-raw bicycle: bboxdata: 509/716
+voc-release5-raw bicycle: bboxdata: 664/716
+voc-release5-raw bicycle: bboxdata: 663/716
+voc-release5-raw bicycle: bbox predictor training...done
+voc-release5-raw bicycle: bbox rescoring val: 39/2130
+voc-release5-raw bicycle: bbox rescoring val: 93/2130
+voc-release5-raw bicycle: bbox rescoring val: 118/2130
+voc-release5-raw bicycle: bbox rescoring val: 145/2130
+voc-release5-raw bicycle: bbox rescoring val: 171/2130
+voc-release5-raw bicycle: bbox rescoring val: 215/2130
+voc-release5-raw bicycle: bbox rescoring val: 260/2130
+voc-release5-raw bicycle: bbox rescoring val: 306/2130
+voc-release5-raw bicycle: bbox rescoring val: 352/2130
+voc-release5-raw bicycle: bbox rescoring val: 402/2130
+voc-release5-raw bicycle: bbox rescoring val: 451/2130
+voc-release5-raw bicycle: bbox rescoring val: 499/2130
+voc-release5-raw bicycle: bbox rescoring val: 546/2130
+voc-release5-raw bicycle: bbox rescoring val: 599/2130
+voc-release5-raw bicycle: bbox rescoring val: 656/2130
+voc-release5-raw bicycle: bbox rescoring val: 709/2130
+voc-release5-raw bicycle: bbox rescoring val: 751/2130
+voc-release5-raw bicycle: bbox rescoring val: 783/2130
+voc-release5-raw bicycle: bbox rescoring val: 825/2130
+voc-release5-raw bicycle: bbox rescoring val: 867/2130
+voc-release5-raw bicycle: bbox rescoring val: 903/2130
+voc-release5-raw bicycle: bbox rescoring val: 932/2130
+voc-release5-raw bicycle: bbox rescoring val: 963/2130
+voc-release5-raw bicycle: bbox rescoring val: 1005/2130
+voc-release5-raw bicycle: bbox rescoring val: 1032/2130
+voc-release5-raw bicycle: bbox rescoring val: 1059/2130
+voc-release5-raw bicycle: bbox rescoring val: 1099/2130
+voc-release5-raw bicycle: bbox rescoring val: 1139/2130
+voc-release5-raw bicycle: bbox rescoring val: 1193/2130
+voc-release5-raw bicycle: bbox rescoring val: 1229/2130
+voc-release5-raw bicycle: bbox rescoring val: 1263/2130
+voc-release5-raw bicycle: bbox rescoring val: 1304/2130
+voc-release5-raw bicycle: bbox rescoring val: 1350/2130
+voc-release5-raw bicycle: bbox rescoring val: 1390/2130
+voc-release5-raw bicycle: bbox rescoring val: 1434/2130
+voc-release5-raw bicycle: bbox rescoring val: 1477/2130
+voc-release5-raw bicycle: bbox rescoring val: 1515/2130
+voc-release5-raw bicycle: bbox rescoring val: 1553/2130
+voc-release5-raw bicycle: bbox rescoring val: 1595/2130
+voc-release5-raw bicycle: bbox rescoring val: 1639/2130
+voc-release5-raw bicycle: bbox rescoring val: 1679/2130
+voc-release5-raw bicycle: bbox rescoring val: 1726/2130
+voc-release5-raw bicycle: bbox rescoring val: 1777/2130
+voc-release5-raw bicycle: bbox rescoring val: 1816/2130
+voc-release5-raw bicycle: bbox rescoring val: 1858/2130
+voc-release5-raw bicycle: bbox rescoring val: 1896/2130
+voc-release5-raw bicycle: bbox rescoring val: 1936/2130
+voc-release5-raw bicycle: bbox rescoring val: 1977/2130
+voc-release5-raw bicycle: bbox rescoring val: 2017/2130
+voc-release5-raw bicycle: bbox rescoring val: 2054/2130
+voc-release5-raw bicycle: bbox rescoring val: 2089/2130
+voc-release5-raw bicycle: bbox rescoring val: 2127/2130
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/local/VOC2014/val_anno.mat': No such file or directory
+rm: cannot remove '/data/home/mb95563/pascalraw-mix2000-bicycle/VOC2014/VOCdevkit/results/VOC2014/Main/comp3_det_val_*.txt': No such file or directory
+bicycle: pr: load: 89/2130
+bicycle: pr: load: 249/2130
+bicycle: pr: load: 408/2130
+bicycle: pr: load: 572/2130
+bicycle: pr: load: 701/2130
+bicycle: pr: load: 846/2130
+bicycle: pr: load: 1001/2130
+bicycle: pr: load: 1120/2130
+bicycle: pr: load: 1252/2130
+bicycle: pr: load: 1357/2130
+bicycle: pr: load: 1522/2130
+bicycle: pr: load: 1693/2130
+bicycle: pr: load: 1833/2130
+bicycle: pr: load: 1996/2130
+bicycle: pr: load: 2110/2130
+bicycle: pr: evaluating detections
+AP = 0.7840 (without bounding box prediction)
+AP = 0.7954 (with bounding box prediction)
+Cache freed; byte size is: 0
