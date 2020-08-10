@@ -17,11 +17,11 @@ int NOISE = 0;
 /// fullscale log gradient magnitude for log gradient quantization
 double LOG_GRADIENT_FULLSCALE_MAGNITUDE = log(8);
 /// bitdepth of log gradients
-int LOG_GRADIENT_BITDEPTH = 2;
+int LOG_GRADIENT_BITDEPTH = 12;
 /// bitdepth of image before gradient extraction 
-int IMAGE_BITDEPTH = 12;
+int IMAGE_BITDEPTH = 2;
 /// bitdepth of input images (typically 12 for RAW images and 8 for JPG images)
-int ORIGINAL_IMAGE_BITDEPTH = 12;
+int ORIGINAL_IMAGE_BITDEPTH = 2;
 
 /// exposure scale factor
 int EXPOSURE_SCALE_FACTOR = 1;
