@@ -17,7 +17,7 @@ int NOISE = 0;
 /// fullscale log gradient magnitude for log gradient quantization
 double LOG_GRADIENT_FULLSCALE_MAGNITUDE = log(8);
 /// bitdepth of log gradients
-int LOG_GRADIENT_BITDEPTH = 12;
+int LOG_GRADIENT_BITDEPTH = 2;
 /// bitdepth of image before gradient extraction 
 int IMAGE_BITDEPTH = 12;
 /// bitdepth of input images (typically 12 for RAW images and 8 for JPG images)

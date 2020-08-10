@@ -1,5 +1,5 @@
 # Database
-VOC2014/VOCdevkit/VOC2014/JPEGImages/
+VOC2014/VOCdevkit/VOC2014/JPEGImages
 
 # LOG
 voc-release5-raw/2014/
@@ -37,7 +37,6 @@ voc-release5-raw/2014/
 
 # Executables
 *.exe
-*.out
 *.app
 *.i*86
 *.x86_64
@@ -90,7 +89,6 @@ dkms.conf
 
 # Executables
 *.exe
-*.out
 *.app
 
 # ------- MAC OS
