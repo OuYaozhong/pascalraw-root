@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name              bicycle_ps-size3-true-2b-log
-#SBATCH --partition             mpi-short
+#SBATCH --partition             mpi-normal
 #SBATCH --nodes                 1
 #SBATCH --tasks-per-node        1
-#SBATCH --time                  24:00:00
+#SBATCH --time                  3-00:00:00
 #SBATCH --cpus-per-task         40
 #SBATCH --mem                   50G
 #SBATCH --output                bicycle_ps-size3-true-2b-log.%j.out
