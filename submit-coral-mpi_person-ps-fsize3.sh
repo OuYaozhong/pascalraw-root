@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name              person_ps-fsize3
-#SBATCH --partition             mpi-normal
+#SBATCH --partition             mpi-short
 #SBATCH --nodes                 1
 #SBATCH --tasks-per-node        1
-#SBATCH --time                  72:00:00
+#SBATCH --time                  24:00:00
 #SBATCH --cpus-per-task         40
 #SBATCH --mem                   50G
 #SBATCH --output                person_ps-fsize3.%j.out
