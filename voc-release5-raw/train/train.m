@@ -585,9 +585,10 @@ for i = 1:batchsize:numneg
   thisbatchsize = batchsize - max(0, (i+batchsize-1) - numneg);
   det_limit = ceil((max_num_examples - num_examples) / thisbatchsize);
   data = cell(thisbatchsize, 1);
-  p = gcp('nocreate');
+  disp('Train Parfor Loop')
+  p = gcp('nocreate')
   if isempty(p)
-      p = parpool('local',20);
+      p = parpool('local',20)
   end
   parfor k = 1:thisbatchsize
     j = inds(i+k-1);
