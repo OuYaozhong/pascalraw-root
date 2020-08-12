@@ -1,0 +1,24 @@
+{Error using gdetect_dp>filter_responses (line 183)
+Error creating thread
+
+Error in gdetect_dp (line 19)
+model = filter_responses(model, pyra);
+
+Error in gdetect (line 38)
+model = gdetect_dp(pyra, model);
+
+Error in train>neghard (line 588)
+  parfor k = 1:thisbatchsize
+
+Error in train (line 178)
+            = neghard(tneg, negiter, model, neg, bytelimit, ...
+
+Error in pascal_train (line 120)
+  model = train(model, impos, neg_small, false, false, 8, 10, ...
+
+Error in pascal (line 55)
+model = pascal_train(cls, n, note);
+} 
+{The client lost connection to worker 9. This might be due to network problems,
+or the interactive communicating job might have errored.
+} 

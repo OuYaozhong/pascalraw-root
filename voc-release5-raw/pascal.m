@@ -16,7 +16,8 @@ function pascal(cls, n, note, dotrainval, testyear)
 
 startup;
 
-if isempty(gcp('nocreate'))
+p = gcp('nocreate')
+if isempty(p)
     p = parpool('local',20)
 end
 compile;
